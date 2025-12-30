@@ -8,50 +8,63 @@
   
   <title>Frontend Mentor | Typing Speed Test</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  
 </head>
 <body>
+  <header>
+    <div>
 
-  Personal best: <!-- PB --> WPM
+    </div>
+    <div>
+      <p>
+        Personal best: <span id="pb"></span> WPM
+      </p>
+    </div>
+  </header>
 
-  WPM: <!-- WPM -->
-  Accuracy: <!-- Accuracy -->
-  Time: <!-- Time -->
+  <main>
+    <section>
+      <div>
+        <ul>
+        <li>
+          <p>WPM: <span id="wpm"></span></p>
+        </li>
+        <li>
+          <p>Accuracy: <span id="accuracy"></span></p>
+        </li>
+        <li>
+          <p>Time: <span id="time"></span></p>
+        </li>
+      </ul>
+      </div>
+      <div>
+        <ul>
+          <li>
+            <p>Difficulty:</p>
+            <label for="easy"><input type="radio" name="difficulty" id="easy" value="easy"> Easy</label>
+            <label for="medium"><input type="radio" name="difficulty" id="medium" value="medium"> Medium</label>
+            <label for="hard"><input type="radio" name="difficulty" id="hard" value="hard"> Hard</label>
+          </li>
+          <li>
+            <p>Mode:</p>
+            <label for="timed"><input type="radio" name="mode" id="timed"> Timed (60s)</label>
+            <label for="passage"><input type="radio" name="mode" id="passage"> Passage</label>
 
-  Difficulty:
-  Easy
-  Medium
-  Hard
-
-  Mode:
-  Timed (60s)
-  Passage
-
-  <!-- Passage -->
-
-  Start Typing Test
-  Or click the text and start typing
-
-  <!-- Test Complete Start -->
-
-  Test Complete!
-  Solid run. Keep pushing to beat your high score.
-
-  WPM: <!-- WPM -->
-  Accuracy: <!-- Accuracy -->
-  Characters: <!-- Correct/Incorrect -->
-
-  Go Again
-  
-  <!-- Test Complete End -->
-
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section>
+      <div>
+        <p><button> Start Typing Test</button>
+      Or click the text and start typing</p>
+      </div>
+      <div><input type="text"></div>
+    </section>
+  </main>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Yukti Gupta</a>.
   </div>
 </body>
 </html>
